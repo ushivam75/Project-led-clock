@@ -99,10 +99,12 @@ func main() {
 	digits := [...]placeholder{
 		zero, one, two, three, four, five, six, seven, eight, nine,
 	}
-
+	
+	screen.Clear()
 		
 for {
-
+	screen.MoveToLeft()
+	
 	now := time.Now()
 	hour, min, sec := now.Hour(), now.Minute(), now.Second()
 
